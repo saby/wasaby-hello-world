@@ -1,0 +1,14 @@
+{
+    "extends": "..\\node_modules\\saby-typescript\\configs\\es5.dev.json",
+    "compilerOptions": {
+        "baseUrl": ".",
+        "outDir": "../wasaby"
+    },
+    "files": [
+        "./Start.ts"
+    ],
+    "exclude": [
+        "wasaby",
+        "./build-ui/builder-json-cache"
+    ]
+}

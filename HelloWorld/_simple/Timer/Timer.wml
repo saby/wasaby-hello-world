@@ -1,0 +1,3 @@
+<div class="HelloWorld-Timer__container">
+  <div>{{ text }}</div>
+</div>
