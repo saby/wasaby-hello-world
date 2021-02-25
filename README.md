@@ -10,9 +10,9 @@
 
         git clone git@github.com:saby/wasaby-hello-world.git /path/to/wasaby-hello-world
 
-1. Переключите репозиторий на нужную ветку, например rc-19.100:
+1. Переключите репозиторий на нужную ветку, например rc-21.2000:
 
-        git checkout rc-21.1000
+        git checkout rc-21.2000
 
 1. Установите зависимости:
 
