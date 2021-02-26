@@ -10,15 +10,19 @@
 
         git clone git@github.com:saby/wasaby-hello-world.git /path/to/wasaby-hello-world
 
-1. Переключите репозиторий на нужную ветку, например rc-21.2000:
+2. Переключите репозиторий на нужную ветку, например rc-21.2000:
 
         git checkout rc-21.2000
 
-1. Установите зависимости:
+3. Установите зависимости:
 
         npm install
 
-1. Cоберите проект:
+4. Обновите хранилище платформы
+
+        npm run update-cli-store
+
+5. Cоберите проект:
 
         npm run build
 

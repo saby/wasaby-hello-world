@@ -4,7 +4,7 @@
             const element = document.createElement('script');
             element.setAttribute('key', key);
             element.setAttribute('type', 'text/javascript');
-            element.setAttribute('src', `/${resourceRoot}/${path}.js`);
+            element.setAttribute('src', `${window.location.origin}/${resourceRoot}/${path}.js`);
             element.addEventListener('load', resolve.bind(null));
             document.head.appendChild(element);
         });
