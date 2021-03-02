@@ -2,6 +2,10 @@
   "name": "wasaby-hello-world",
   "version": "21.2000.0",
   "description": "Simple Wasaby Hello World",
+  "repository": {
+      "type": "git",
+      "url": "git@github.com:saby/wasaby-hello-world.git"
+   },
   "scripts": {
     "build": "npm run build:typescript && npm run build:app && npm run build:start-script",
     "build:typescript": "wasaby-cli --tasks=prepare",
