@@ -29,9 +29,9 @@
     Promise.all(Object.keys(resources).map((key) => {
         return generateElement(key, resources[key]);
     })).then(() => {
-        requirejs(['Application/Initializer', 'UI/Base'], (AppInit: any, UI: any) => {
+        requirejs(['Application/Initializer', 'UI/Base', 'UI/State'], (AppInit: any, UI: any, UIState: any) => {
             // @ts-ignore
-            window.startContextData = {AppData: new UI.AppData({})};
+            window.startContextData = {AppData: new UIState.AppData({})};
             // @ts-ignore
             AppInit.default(window.wsConfig);
             UI.Start({}, document.getElementById('wasabyRoot'));
