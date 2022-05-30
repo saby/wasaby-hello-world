@@ -1,22 +1,24 @@
 {
   "name": "wasaby-hello-world",
-  "version": "21.2000.0",
+  "version": "22.4000.0",
   "description": "Simple Wasaby Hello World",
   "repository": {
-      "type": "git",
-      "url": "git@github.com:saby/wasaby-hello-world.git"
-   },
+    "type": "git",
+    "url": "git@git.sbis.ru:saby/wasaby-hello-world.git"
+  },
   "scripts": {
     "build": "npm run build:typescript && npm run build:app && npm run build:start-script",
-    "build:typescript": "wasaby-cli --tasks=prepare",
-    "build:app": "wasaby-cli --tasks=build",
+    "build:typescript": "wasaby-cli initTSEnv",
+    "build:app": "wasaby-cli buildProject --copy --umd --react",
     "build:start-script": "tsc --project HelloWorld/tsconfig.json",
+    "start": "wasaby-cli startServer",
     "prepare": "npm run update-cli-store && npm run build:typescript",
-    "update-cli-store": "wasaby-cli --tasks=initStore"
+    "update-cli-store": "wasaby-cli loadProject"
   },
   "wasaby-cli": {
     "port": 777,
     "workDir": "wasaby",
+    "store": ".wasaby-cli-store",
     "entry": [
       "./HelloWorld/HelloWorld.s3mod"
     ]
@@ -29,7 +31,8 @@
     "stylelint": "^9.7.1",
     "stylelint-config-standard": "^18.2.0",
     "tslint": "^5.18.0",
-    "wasaby-cli": "git+https://platform-git.sbis.ru/saby/wasaby-cli.git#rc-21.1000"
+    "saby-typescript": "git+https://git.sbis.ru/saby/typescript.git#rc-22.4000",
+    "wasaby-cli": "git+https://git.sbis.ru/saby/wasaby-cli.git#rc-22.4000"
   },
   "author": "Печеркин С.В."
 }
