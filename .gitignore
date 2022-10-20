@@ -16,3 +16,10 @@
 /tslib.js
 /tslint.json
 builderConfig.json
+/wasaby-cli_artifacts
+/**/tsconfig.json
+/wasabyGlobalTypings.d.ts
+/tailwind.config.js
+/.eslintrc.js
+/.stylelintrc.js
+.stylelintignore

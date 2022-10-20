@@ -10,9 +10,9 @@
 
         git clone git@github.com:saby/wasaby-hello-world.git /path/to/wasaby-hello-world
 
-2. Переключите репозиторий на нужную ветку, например rc-21.2000:
+2. Переключите репозиторий на нужную ветку, например rc-22.7000:
 
-        git checkout rc-21.2000
+        git checkout rc-22.7000
 
 3. Установите зависимости:
 
@@ -26,5 +26,11 @@
 
         npm run build
 
+6. Запустите стенд:
+
+        npm run start
+
+7. Откройте ссылку [http://localhost:777/HelloWorld](http://localhost:777/HelloWorld) в браузере
+
 #### Ответственные:
-- Печеркин С.В. (Разработка)
+- Мустафин Л.И. (Разработка)
