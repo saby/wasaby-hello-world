@@ -1,35 +1,35 @@
 {
-  "name": "wasaby-hello-world",
-  "version": "21.2000.0",
-  "description": "Simple Wasaby Hello World",
-  "repository": {
+   "name": "wasaby-hello-world",
+   "version": "21.2000.0",
+   "description": "Simple Wasaby Hello World",
+   "repository": {
       "type": "git",
       "url": "git@github.com:saby/wasaby-hello-world.git"
    },
-  "scripts": {
-    "build": "npm run build:typescript && npm run build:app && npm run build:start-script",
-    "build:typescript": "wasaby-cli --tasks=prepare",
-    "build:app": "wasaby-cli --tasks=build",
-    "build:start-script": "tsc --project HelloWorld/tsconfig.json",
-    "prepare": "npm run update-cli-store && npm run build:typescript",
-    "update-cli-store": "wasaby-cli --tasks=initStore"
-  },
-  "wasaby-cli": {
-    "port": 777,
-    "workDir": "wasaby",
-    "entry": [
-      "./HelloWorld/HelloWorld.s3mod"
-    ]
-  },
-  "dependencies": {},
-  "devDependencies": {
-    "@tensor-corp/eslint-config": "^2.0.3",
-    "concurrently": "^5.3.0",
-    "eslint": "^5.7.0",
-    "stylelint": "^9.7.1",
-    "stylelint-config-standard": "^18.2.0",
-    "tslint": "^5.18.0",
-    "wasaby-cli": "git+https://platform-git.sbis.ru/saby/wasaby-cli.git#rc-21.1000"
-  },
-  "author": "Печеркин С.В."
+   "scripts": {
+      "build": "npm run build:typescript && npm run build:app && npm run build:start-script",
+      "build:typescript": "wasaby-cli --tasks=prepare",
+      "build:app": "wasaby-cli --tasks=build",
+      "build:start-script": "tsc --project HelloWorld/tsconfig.json",
+      "prepare": "npm run update-cli-store && npm run build:typescript",
+      "update-cli-store": "wasaby-cli --tasks=initStore"
+   },
+   "wasaby-cli": {
+      "port": 777,
+      "workDir": "wasaby",
+      "entry": [
+         "./HelloWorld/HelloWorld.s3mod"
+      ]
+   },
+   "dependencies": {},
+   "devDependencies": {
+      "@tensor-corp/eslint-config": "^2.0.3",
+      "concurrently": "^5.3.0",
+      "eslint": "^5.7.0",
+      "stylelint": "^9.7.1",
+      "stylelint-config-standard": "^18.2.0",
+      "tslint": "^5.18.0",
+      "wasaby-cli": "git+https://platform-git.sbis.ru/saby/wasaby-cli.git#rc-21.1000"
+   },
+   "author": "Печеркин С.В."
 }
