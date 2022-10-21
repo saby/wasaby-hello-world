@@ -1,12 +1,12 @@
-/// <amd-module name="HelloWorld/_simple/Timer" />
+/// <amd-module name="HelloWorld/Index" />
 
 import { Control, TemplateFunction } from 'UI/Base';
-import * as Template from 'wml!HelloWorld/_simple/Timer/Timer';
+import * as Template from 'wml!HelloWorld/_index/Index';
 
 const INTERVAL: number = 500;
 const FRACTION_LENGTH: number = 2;
 
-export default class Timer extends Control {
+export default class Index extends Control {
     readonly _template: TemplateFunction = Template;
     text: string;
     private _interval: number;
@@ -28,7 +28,7 @@ export default class Timer extends Control {
         this.text = `${addZero(time.getHours())} : ${addZero(time.getMinutes())} : ${addZero(time.getSeconds())}`;
     }
 
-    static _styles: string[] = ['HelloWorld/Simple'];
+    static _styles: string[] = ['HelloWorld/_index/Index'];
 }
 
 function addZero(num: number): string {
